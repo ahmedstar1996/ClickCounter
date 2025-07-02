@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>عداد النقر</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 50px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="count">0</h1>
+  <button onclick="increment()">انقرني</button>
+
+  <script>
+    let count = 0;
+
+    function increment() {
+      count++;
+      document.getElementById("count").textContent = count;
+    }
+  </script>
+
+</body>
+</html>
